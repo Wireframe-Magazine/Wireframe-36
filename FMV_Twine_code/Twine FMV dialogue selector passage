@@ -1,0 +1,18 @@
+Twine FMV dialogue selector passage
+
+Passage name: dialogue selector
+
+
+You are in a country cottage. 
+(unless: $wolfprint is "true")[A concrete cast of a wolf's pawprint is here. (link: "Pick it up?")[(set: $wolfprint to "true")(go-to: "dialogue selector")]
+
+]
+
+Who do you want to talk to?
+
+(link: "Herr Doktor Klingmann")[
+	(set: $now_playing to "Klingmann")
+	(go-to: "Herr Doktor Klingmann")]
+
+
+

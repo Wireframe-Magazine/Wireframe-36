@@ -1,0 +1,58 @@
+Plan 9 From FMV Story Stylesheet
+
+html
+{
+  background-color: #3b3d3f;
+  color: #0f1010;
+}
+ 
+tw-link {
+  color: #6b0b0b;
+}
+
+tw-link.visited {
+	color:#000000;
+}
+
+tw-story { /* background image CSS*/
+  	background-color: #3b3d3f;
+    background-size: auto;
+	background-image: url("silhouette_tile.png");
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	background-attachment: fixed;
+	font-family: monospace;
+	font-size: 18px;
+}
+
+/* left sidebar styling */
+tw-sidebar 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;                        
+    max-height: 100%;
+    padding: 0 0.5em 0.5em 0.5em;
+    text-align: left;
+    background-color: transparent;
+}
+
+/* right sidebar styling */
+tw-passage tw-include[title="Sidebar"] 
+{
+	width: 20%;
+	position: fixed;
+	right: 0;
+	top: 0;
+    padding: 0 0.5em 0.5em 0.5em;
+	text-overflow: wrap;
+}
+
+#video {
+	text-align: center;
+}
+
+#center {
+text-align: center;
+}

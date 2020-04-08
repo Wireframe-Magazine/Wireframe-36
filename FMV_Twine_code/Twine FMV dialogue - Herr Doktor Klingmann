@@ -1,0 +1,21 @@
+Twine FMV dialogue - Herr Doktor Klingmann
+
+Passage name: Herr Doktor Klingmann
+
+<!-- ''Persistent video window'' -->
+
+(display: $now_playing)
+
+<div id="questions_bg">
+<div id="questions">(link: "So.. you're in charge of the zoo's mammal division?")[(set: $now_playing to "So.. you're in charge of the zoo's mammal division?")(go-to: "Herr Doktor Klingmann")]
+
+(link: "I see you're particularly interested in wolves.")[(set: $now_playing to "I see you're particularly interested in wolves.")(go-to: "Herr Doktor Klingmann")]
+
+(link: "What kind of wolf research do you do, Herr Doctor?")[(set: $now_playing to "What kind of wolf research do you do, Herr Doctor?")(go-to: "Herr Doktor Klingmann")]
+
+(link: "Do you mind if we talk briefly about the missing wolves?")[(set: $now_playing to "Do you mind if talk briefly about the missing wolves?")(go-to: "Herr Doktor Klingmann")]
+
+(if: $wolfprint is "true")[(link: "What do you think of this pawprint impression?")[(set: $now_playing to "What do you think of this pawprint impression?")(go-to: "Herr Doktor Klingmann")]]</div>
+</div>
+
+

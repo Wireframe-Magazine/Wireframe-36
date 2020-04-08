@@ -1,0 +1,12 @@
+Twine FMV dialogue system startup
+
+Passage name: startup
+Passage tag: startup
+
+{
+(set: $now_playing to "nothing")
+
+<!-- inventory -->
+(set: $wolfprint to "false")
+}
+

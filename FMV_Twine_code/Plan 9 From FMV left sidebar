@@ -1,0 +1,18 @@
+Plan 9 From FMV left sidebar
+
+Passage name: Left sidebar
+Passage tag: fotter
+
+<!-- this replaces Twines default sidebar, which usually houses the back button -->
+
+(replace: ?Sidebar)[
+
+Actions:
+[[Ennumerate evidence]]
+[[Debriefing]]
+
+
+Review marked evidence:
+{(live: 0.5s)[(print: $evidence_list.join("<br>"))]}
+
+]

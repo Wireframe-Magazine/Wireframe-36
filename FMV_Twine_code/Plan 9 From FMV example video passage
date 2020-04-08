@@ -1,0 +1,22 @@
+Plan 9 From FMV example video passage
+
+Passage name: Friday, May 8, 18:00
+Passage tag: video
+
+<!-- HTML5 video insert -->
+<div id="video"><video controls autoplay width="70%">
+  <source src="saucer_buzzes_plane.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video></div>
+<div id="center">(print: (passage:)'s name)</div>
+
+<!-- lets the player add this video to their evidence list -->
+<div id="center">
+Mark as evidence of extraterrestrial activity?
+(link: "Yes")[(print: "Yes")(set: $evidence_list to $evidence_list + (a: "[[Friday, May 8, 18:00]]"))] | (link: "No")[(print: "No")(set: $evidence_list to $evidence_list - (a: "[[Friday, May 8, 18:00]]"))]
+</div>
+
+<!-- adds a related video clip to our master list, allowing the player to discover new videos as they go through the clips they have access to -->
+(unless: $video_list contains "[[Saturday, May 9, 22:00]]")[(set: $video_list to $video_list + (a: "[[Saturday, May 9, 22:00]]"))]
+
+

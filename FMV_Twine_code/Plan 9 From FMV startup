@@ -1,0 +1,13 @@
+Plan 9 From FMV startup
+
+Passage name: startup
+Passage tag: startup
+
+{
+
+(set: $video_list to (array: "[[Friday, May 8, 18:00]]", "[[Saturday, May 9, 08:00]]", "[[Saturday, May 9, 21:00]]"))
+
+(set: $evidence_list to (array:))
+
+
+}

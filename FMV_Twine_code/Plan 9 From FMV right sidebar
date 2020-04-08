@@ -1,0 +1,12 @@
+Plan 9 From FMV right sidebar
+
+Passage name: Sidebar
+Passage tag: header
+
+<!-- display and refresh discovered video clips list to keep it current -->
+
+
+Available clips:
+{(live: 0.5s)[(print: $video_list.join("<br>"))]}
+
+
